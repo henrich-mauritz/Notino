@@ -8,21 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		DF48982627D35D360095588F /* NotinoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48982527D35D360095588F /* NotinoApp.swift */; };
-		DF48982827D35D360095588F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48982727D35D360095588F /* ContentView.swift */; };
+		DF48982827D35D360095588F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48982727D35D360095588F /* MainView.swift */; };
 		DF48982A27D35D370095588F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF48982927D35D370095588F /* Assets.xcassets */; };
 		DF48982D27D35D370095588F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF48982C27D35D370095588F /* Preview Assets.xcassets */; };
-		DF48982F27D35D370095588F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48982E27D35D370095588F /* Persistence.swift */; };
+		DF48982F27D35D370095588F /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48982E27D35D370095588F /* PersistenceController.swift */; };
 		DF48983227D35D370095588F /* Notino.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF48983027D35D370095588F /* Notino.xcdatamodeld */; };
+		DF48983C27D35E9B0095588F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48983B27D35E9B0095588F /* MainViewModel.swift */; };
+		DF48983E27D35EDC0095588F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48983D27D35EDC0095588F /* Item.swift */; };
+		DF48984027D366BC0095588F /* ProductFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48983F27D366BC0095588F /* ProductFetcher.swift */; };
+		DF48986227D3D8A50095588F /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48986127D3D8A50095588F /* ItemView.swift */; };
+		DF48986427D3E2AE0095588F /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48986327D3E2AE0095588F /* ItemViewModel.swift */; };
+		DF48988527D4B6CE0095588F /* CachedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48988427D4B6CE0095588F /* CachedImage.swift */; };
+		DF48988727D4B6FF0095588F /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48988627D4B6FF0095588F /* ImageCache.swift */; };
+		DF48988927D4B7430095588F /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48988827D4B7430095588F /* ImageLoader.swift */; };
+		DF48988B27D4B76D0095588F /* ImageCacheKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48988A27D4B76D0095588F /* ImageCacheKey.swift */; };
+		DF48988E27D4E4730095588F /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48988D27D4E4730095588F /* ErrorHandling.swift */; };
+		DF48989027D4E49B0095588F /* AlertModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48988F27D4E49B0095588F /* AlertModifier.swift */; };
+		DF48989427D4E5090095588F /* ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48989327D4E5090095588F /* ErrorAlert.swift */; };
+		DF48989627D4E83F0095588F /* ErrorCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48989527D4E83F0095588F /* ErrorCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF48982227D35D360095588F /* Notino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notino.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF48982527D35D360095588F /* NotinoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotinoApp.swift; sourceTree = "<group>"; };
-		DF48982727D35D360095588F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DF48982727D35D360095588F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DF48982927D35D370095588F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF48982C27D35D370095588F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DF48982E27D35D370095588F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		DF48982E27D35D370095588F /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		DF48983127D35D370095588F /* Notino.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notino.xcdatamodel; sourceTree = "<group>"; };
+		DF48983B27D35E9B0095588F /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		DF48983D27D35EDC0095588F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		DF48983F27D366BC0095588F /* ProductFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductFetcher.swift; sourceTree = "<group>"; };
+		DF48986127D3D8A50095588F /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		DF48986327D3E2AE0095588F /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		DF48988427D4B6CE0095588F /* CachedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachedImage.swift; sourceTree = "<group>"; };
+		DF48988627D4B6FF0095588F /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		DF48988827D4B7430095588F /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		DF48988A27D4B76D0095588F /* ImageCacheKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheKey.swift; sourceTree = "<group>"; };
+		DF48988D27D4E4730095588F /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		DF48988F27D4E49B0095588F /* AlertModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertModifier.swift; sourceTree = "<group>"; };
+		DF48989327D4E5090095588F /* ErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorAlert.swift; sourceTree = "<group>"; };
+		DF48989527D4E83F0095588F /* ErrorCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorCase.swift; sourceTree = "<group>"; };
+		DF48989727D4F1280095588F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +63,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF24DED927D5367D00B45362 /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				DF48988A27D4B76D0095588F /* ImageCacheKey.swift */,
+				DF48988427D4B6CE0095588F /* CachedImage.swift */,
+				DF48988627D4B6FF0095588F /* ImageCache.swift */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
 		DF48981927D35D360095588F = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +93,14 @@
 			isa = PBXGroup;
 			children = (
 				DF48982527D35D360095588F /* NotinoApp.swift */,
-				DF48982727D35D360095588F /* ContentView.swift */,
+				DF48983827D35D720095588F /* Views */,
+				DF48983927D35D7C0095588F /* ViewModels */,
+				DF48983A27D35D850095588F /* Models */,
+				DF24DED927D5367D00B45362 /* ImageCache */,
+				DF48988C27D4E45C0095588F /* ErrorHandling */,
+				DF48984127D36CF10095588F /* Services */,
+				DF48989727D4F1280095588F /* Info.plist */,
 				DF48982927D35D370095588F /* Assets.xcassets */,
-				DF48982E27D35D370095588F /* Persistence.swift */,
 				DF48983027D35D370095588F /* Notino.xcdatamodeld */,
 				DF48982B27D35D370095588F /* Preview Content */,
 			);
@@ -71,6 +113,53 @@
 				DF48982C27D35D370095588F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF48983827D35D720095588F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF48982727D35D360095588F /* MainView.swift */,
+				DF48986127D3D8A50095588F /* ItemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF48983927D35D7C0095588F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DF48983B27D35E9B0095588F /* MainViewModel.swift */,
+				DF48986327D3E2AE0095588F /* ItemViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DF48983A27D35D850095588F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF48983D27D35EDC0095588F /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF48984127D36CF10095588F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DF48982E27D35D370095588F /* PersistenceController.swift */,
+				DF48983F27D366BC0095588F /* ProductFetcher.swift */,
+				DF48988827D4B7430095588F /* ImageLoader.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DF48988C27D4E45C0095588F /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				DF48988F27D4E49B0095588F /* AlertModifier.swift */,
+				DF48988D27D4E4730095588F /* ErrorHandling.swift */,
+				DF48989327D4E5090095588F /* ErrorAlert.swift */,
+				DF48989527D4E83F0095588F /* ErrorCase.swift */,
+			);
+			path = ErrorHandling;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +232,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF48982F27D35D370095588F /* Persistence.swift in Sources */,
-				DF48982827D35D360095588F /* ContentView.swift in Sources */,
+				DF48988727D4B6FF0095588F /* ImageCache.swift in Sources */,
+				DF48988527D4B6CE0095588F /* CachedImage.swift in Sources */,
+				DF48988B27D4B76D0095588F /* ImageCacheKey.swift in Sources */,
+				DF48989427D4E5090095588F /* ErrorAlert.swift in Sources */,
+				DF48988927D4B7430095588F /* ImageLoader.swift in Sources */,
+				DF48989027D4E49B0095588F /* AlertModifier.swift in Sources */,
+				DF48983C27D35E9B0095588F /* MainViewModel.swift in Sources */,
+				DF48982F27D35D370095588F /* PersistenceController.swift in Sources */,
+				DF48989627D4E83F0095588F /* ErrorCase.swift in Sources */,
+				DF48982827D35D360095588F /* MainView.swift in Sources */,
+				DF48986227D3D8A50095588F /* ItemView.swift in Sources */,
 				DF48983227D35D370095588F /* Notino.xcdatamodeld in Sources */,
+				DF48988E27D4E4730095588F /* ErrorHandling.swift in Sources */,
+				DF48986427D3E2AE0095588F /* ItemViewModel.swift in Sources */,
+				DF48983E27D35EDC0095588F /* Item.swift in Sources */,
 				DF48982627D35D360095588F /* NotinoApp.swift in Sources */,
+				DF48984027D366BC0095588F /* ProductFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +306,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -259,6 +363,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -280,9 +386,10 @@
 				DEVELOPMENT_TEAM = E9B7949KKJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Notino/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,9 +416,10 @@
 				DEVELOPMENT_TEAM = E9B7949KKJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Notino/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
