@@ -6,11 +6,8 @@
 //
 
 import SwiftUI
-import CoreData
 
 class ItemViewModel: ObservableObject {
-    private let context = PersistenceController.shared.container.viewContext
-    
     let item: Item
     
     @Published var brandName: String = ""
@@ -21,6 +18,8 @@ class ItemViewModel: ObservableObject {
     
     @Published var favorited = false
     
+    private let persistanceController = PersistenceController.shared
+    
     init(item: Item) {
         self.item = item
         prepareItem()
@@ -30,48 +29,21 @@ class ItemViewModel: ObservableObject {
     func toggleFavorited() {
         if favorited {
             // remove from coreData database
-            let request: NSFetchRequest<Favorited> = Favorited.fetchRequest()
-            do {
-                let favoritedIds = try context.fetch(request)
-                if let objectToDelete = favoritedIds.first(where: { $0.id == Int64(item.productId) }) {
-                    context.delete(objectToDelete)
-                    try context.save()
-                    self.favorited = false
-                } else {
-                    NSLog((ErrorCase.coreDataIdNotFound).localizedDescription)
-                    self.favorited = true
-                }
-            } catch {
-                NSLog(error.localizedDescription)
-                self.favorited = true
-            }
+            persistanceController.remove(id: item.productId, completion: { success in
+                self.favorited = !success
+            })
         } else {
             // add to coreData database
-            let newFavorited = Favorited(context: context)
-            newFavorited.id = Int64(item.productId)
-            do {
-                try context.save()
-                self.favorited = true
-            } catch {
-                NSLog(error.localizedDescription)
-                self.favorited = false
-            }
+            persistanceController.add(id: item.productId, completion: { success in
+                self.favorited = success
+            })
         }
     }
     
     private func getFavoritedStatus() {
-        do {
-            let request: NSFetchRequest<Favorited> = Favorited.fetchRequest()
-            let favoritedIds = try context.fetch(request)
-            if let _ = favoritedIds.first(where: { $0.id == Int64(item.productId) }) {
-                self.favorited = true
-            } else {
-                self.favorited = false
-            }
-        } catch {
-            NSLog(error.localizedDescription)
-            self.favorited = false
-        }
+        persistanceController.getStatus(item.productId, completion: { isFavorited in
+            self.favorited = isFavorited
+        })
     }
     
     private func prepareItem() {
