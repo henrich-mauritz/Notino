@@ -55,7 +55,9 @@ class ImageLoader: ObservableObject {
             })
             .subscribe(on: Self.imageProcessingQueue)
             .receive(on: DispatchQueue.main)
-            .sink { [weak self] in self?.image = $0 }
+            .sink { [weak self] in
+                self?.image = $0
+            }
     }
     
     func cancel() {
